@@ -1,0 +1,521 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: black;
+    color: #e7e7e7;
+    min-height: 100vh;
+    line-height: 1.5;
+}
+
+/* GRADIENT AND LAYER BLUR EFFECT */
+.image-gradient {
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+.blur-effect {
+    height: 0;
+    width: 30rem;
+    position: absolute;
+    top: 20%;
+    right: 0;
+    box-shadow: 0 0 700px 15px white;
+    rotate: -30deg;
+    z-index: -1;
+}
+
+/* CONTAINER */
+.container {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 2rem;
+    position: relative;
+    overflow: hidden;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 5rem;
+    position: fixed;
+    gap: 300px;
+    background-color: gray;
+    width: 100%;
+    z-index: 999;
+
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3rem;
+    font-weight: 300;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    margin-left: -5%;
+}
+
+nav a {
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    transition: color 0.2s ease;
+    text-decoration: none;
+    color: inherit;
+    z-index: 999;
+}
+
+nav a:hover {
+    color: #a7a7a7;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.btn-signing {
+    background-color: #a7a7a7;
+    color: black;
+    padding: 0.8rem 2rem;
+    border-radius: 50px;
+    border: none;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: 0.5s;
+    cursor: pointer;
+    z-index: 999;
+}
+
+.btn-signing:hover {
+    background-color: white;
+}
+
+/* MAIN CONTENT */
+main {
+    position: relative;
+    top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: calc(90vh - 6rem);
+    z-index: 1;
+}
+
+.content {
+    max-width: 40rem;
+    margin-left: 10%;
+    z-index: 999;
+}
+
+.tag-box {
+    position: relative;
+    width: 18rem;
+    height: 2.5rem;
+    border-radius: 50px;
+    background: linear-gradient(to right, #656565, #7f42a7, #6600c5, #5300a0, #757575, #656565);
+    background-size: 200%;
+    animation: animationGradient 2.5s linear infinite;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}
+
+
+@keyframes animationGradient {
+    to {
+        background-position: 200%;
+    }
+}
+
+.tag-box .tag {
+    position: absolute;
+    inset: 3px 3px 3px 3px;
+    background-color: black;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.tag-box .tag:hover {
+    color: #5300a0;
+}
+
+.content h1 {
+    font-size: 4rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    margin: 2rem 0;
+    line-height: 1.2;
+    text-shadow: 0 0 10px rgba(128, 128, 128, 0.418);
+}
+
+.description {
+    font-size: 1.2rem;
+    letter-spacing: 0.05em;
+    max-width: 35rem;
+    color: gray;
+}
+
+.buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 3rem;
+}
+
+.btn-get-started {
+    text-decoration: none;
+    border: 1px solid #2a2a2a;
+    padding: 0.7rem 1.2rem;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    transition: background-color 0.2s ease;
+}
+
+.btn-get-started:hover {
+    background-color: #1a1a1a;
+}
+
+.btn-signing-main {
+    text-decoration: none;
+    background-color: lightgray;
+    color: black;
+    padding: 0.6rem 2.5rem;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    transition: background-color 0.2s ease;
+}
+
+.btn-signing-main:hover {
+    background-color: gray;
+}
+
+.robot-3d {
+    position: absolute;
+    top: 15%;
+    right: -12%;
+    width: 58%;
+    height: 80%;
+    z-index: 10;
+}
+
+.list_website {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 20px;
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    gap: 20px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.list_website img {
+    width: 400px;
+    height: 200px;
+    border-radius: 30px;
+    border-color: rgb(255, 255, 255);
+    border: 2px;
+    border-style: solid;
+}
+
+.judul_list h1 {
+    text-align: center;
+    font-size: 50px;
+    font-family: system-ui, sans-serif;
+}
+
+.list_website .block img {
+    transition: transform 0.3s ease;
+    position: relative;
+    z-index: 25;
+}
+
+.list_website .block img:hover {
+    transform: translateY(-10px) scale(1.3);
+}
+
+.list_website .block:hover {
+    z-index: 50;
+}
+
+.list_website .block {
+    background-color: #2a2a2a;
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px;
+    height: 300px;
+    transition: transform 0.3s ease;
+    z-index: 1;
+    position: relative;
+}
+
+/* Tombol container */
+.lainnya {
+    grid-column: 1 / 4;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+/* Tombol */
+.btn-lainnya {
+    padding: 15px 40px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    width: 40%;
+    font-size: 20px;
+    background-color: #656565;
+    color: rgb(224, 217, 217);
+}
+
+.btn-lainnya:hover {
+    color: rgb(170, 167, 167);
+}
+
+footer {
+    bottom: 0;
+    padding: 20px;
+    width: 100%;
+    background-color: #757575;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+.module2 {
+    width: 100%;
+    height: 100%;
+}
+
+.module2 {
+    width: 50%;
+}
+
+.module3 {
+    width: 50%;
+}
+
+.module-mutiara {
+    margin-top: 100px;
+    position: relative;
+    width: 100%;
+}
+
+.adjust-module-mutiara {
+    width: 60%;
+    height: 80%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    background-color: #1a1a1a;
+    border-radius: 30px;
+}
+
+.parent-title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.parent-module {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}
+
+.design-title {
+    position: relative;
+    width: 18rem;
+    height: 2.5rem;
+    border-radius: 50px;
+    background: linear-gradient(to right, #5E5D7A, #708EB3, #80B0C2, #8C9FC2, #484873);
+    background-size: 200%;
+    animation: animationGradient 2.5s linear infinite;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+    color: white;
+    justify-content: center;
+}
+
+.design-title .design {
+    position: absolute;
+    inset: 3px 3px 3px 3px;
+    background-color: black;
+    border-radius: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.design-title .design:hover {
+    color: #18364d;
+}
+
+/* BURGER MENU */
+.burger {
+    display: none;
+    flex-direction: column;
+    gap: 6px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.burger span {
+    width: 28px;
+    height: 3px;
+    background: white;
+    border-radius: 3px;
+    transition: 0.3s;
+}
+
+
+
+
+
+.drop {
+    width: 260px;
+    height: 260px;
+    background: #cbd5e1;
+    border-radius: 20px;
+    cursor: pointer;
+    /* Transformasi 3D default */
+    transform: perspective(800px) rotateX(45deg) scale(0.7);
+    box-shadow: 0 25px 50px rgba(100, 120, 150, .3),
+        inset 0px -4px 8px rgba(255, 255, 255, 0.6);
+    transition: transform 0.5s ease, box-shadow 0.6s ease;
+    /* Konteks penempatan pop-up */
+    position: relative;
+    display: inline-block;
+}
+
+.drop:hover {
+    /* Transformasi saat hover */
+    transform: rotateX(0deg) scale(1) translateY(-10px);
+    box-shadow: 0 35px 70px rgba(80, 100, 130, .35),
+        inset 0 -6px 10px rgba(255, 255, 255, 0.7);
+    /* Memastikan card yang di-hover muncul di depan */
+    z-index: 10;
+}
+
+.drop_contain {
+    gap: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Styling Dasar Semua Pop-up */
+.html_text,
+.css_text,
+.javascript_text {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 330px;
+    background-color: #2a2f4a;
+    color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: left;
+    font-size: 14px;
+    line-height: 1.4;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    z-index: 5;
+
+    /* Pengaturan visibility dan transisi default */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
+}
+
+/* --- 1. HTML: MUNCUL DARI KANAN (SETELAH PERBAIKAN) --- */
+
+.html_text {
+    /* Posisi awal: di luar batas kanan */
+    left: 100%;
+    transform: translateY(-50%) translateX(20px);
+}
+
+.drop_1:hover .html_text {
+    opacity: 1;
+    visibility: visible;
+    /* Posisi akhir: bergeser ke kiri (masuk) */
+    transform: translateY(-50%) translateX(-20px);
+}
+
+
+/* --- 2. CSS: MUNCUL DUA TAB (KIRI & KANAN) --- */
+
+/* Posisi Kiri */
+.css_left {
+    /* Posisi awal: di luar batas kiri */
+    right: 100%;
+    transform: translateY(-50%) translateX(-20px);
+}
+
+.drop_2:hover .css_left {
+    opacity: 1;
+    visibility: visible;
+    /* Posisi akhir: bergeser ke kanan (masuk) */
+    transform: translateY(-50%) translateX(20px);
+}
+
+/* Posisi Kanan */
+.css_right {
+    /* Posisi awal: di luar batas kanan */
+    left: 100%;
+    transform: translateY(-50%) translateX(20px);
+}
+
+.drop_2:hover .css_right {
+    opacity: 1;
+    visibility: visible;
+    /* Posisi akhir: bergeser ke kiri (masuk) */
+    transform: translateY(-50%) translateX(-20px);
+}
+
+
+/* --- 3. JAVASCRIPT: MUNCUL DARI KIRI (SETELAH PERBAIKAN) --- */
+
+.javascript_text {
+    /* Posisi awal: di luar batas kiri */
+    right: 100%;
+    transform: translateY(-50%) translateX(-20px);
+}
+
+.drop_3:hover .javascript_text {
+    opacity: 1;
+    visibility: visible;
+    /* Posisi akhir: bergeser ke kanan (masuk) */
+    transform: translateY(-50%) translateX(20px);
+}
+
+.title_container1 {
+    color: white;
+    text-align: center;
+}

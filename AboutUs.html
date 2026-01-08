@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portfolio — Front-end Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="AboutUs.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <meta name="description" content="Front-end developer / multi-platform engineer / game developer portfolio">
+</head>
+
+
+<body>
+  <main class="wrap">
+    <header class="hero">
+      <div class="hero-inner">
+        <div class="avatar-wrap">
+          <!-- Replace profile.jpg with your image -->
+          <img data-aos="fade-down" data-aos-duration="1000" src="Image/Profile.jpeg" alt="Profile" class="avatar">
+        </div>
+        <div class="intro">
+          <h1 data-aos="fade-down" data-aos-duration="1800" class="name">Farren Albert Widagdo</h1>
+          <p data-aos="fade-down" data-aos-duration="1500" class="roles">Front-end Developer • Multi-platform Engineer • Game Developer</p>
+          <p data-aos="fade-down" data-aos-duration="1000" class="lead">Saya bergabung dalam pengembangan digital informatika, menjadi seorang pelajar di bidang
+            teknologi.
+            Mempelajari skill yang dibutuhkan untuk menjadi seorang full-stack developer, game developer, dan
+            multi-platform engineer.
+          </p>
+          <div class="actions">
+            <a data-aos="fade-down" data-aos-duration="1200" class="btn primary" href="#contact">Contact</a>
+            <a data-aos="fade-down" data-aos-duration="1100" class="btn ghost" href="#skills">Skills</a>
+            <a data-aos="fade-down" data-aos-duration="1000" class="back" id="backBtn" href="index.html" role="button" aria-label="Kembali">Kembali</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section data-aos="fade-down" data-aos-duration="1500" id="about" class="card">
+      <h2 data-aos="fade-down" data-aos-duration="1000">Perkenalan</h2>
+      <p data-aos="fade-down" data-aos-duration="700">Halo, saya seorang siswa SMAK Santa Agnes yang masuk ke paket informatika di kurikulum merdeka.
+        Umur saya 17 tahun dan saya sangat tertarik dengan dunia pemrograman, pengembangan web, serta pembuatan game.
+        Saya telah mempelajari berbagai teknologi seperti HTML, CSS, JavaScript, dan framework terkait lainnya.
+        Selain itu, saya juga memiliki pengalaman dalam menggunakan alat-alat pengembangan seperti Github, Blender, dan
+        Game Engine.
+        <br><br>
+        Saya ingin masuk ke industi game development di masa depan dengan beberapa skill set informatika di masa depan.
+        Saya percaya bahwa AI adalah alat bantu dan masa depan teknologi, bukan suatu penghalang atau pengganti manusia
+        di masa depan.
+      </p>
+    </section>
+
+    <section data-aos="fade-down" data-aos-duration="1500" id="skills" class="card grid">
+      <div data-aos="fade-down" data-aos-duration="2500">
+        <h3>Keahlian Utama</h3>
+        <ul class="skills-list">
+          <li data-aos="fade-down" data-aos-duration="1500"><span>Front-end developer</span><span class="meter" style="--v:75%"></span></li>
+          <li data-aos="fade-down" data-aos-duration="1400"><span>Game development</span><span class="meter" style="--v:90%"></span></li>
+          <li data-aos="fade-down" data-aos-duration="1300"><span>3D Design</span><span class="meter" style="--v:85%"></span></li>
+          <li data-aos="fade-down" data-aos-duration="1200"><span>Photography</span><span class="meter" style="--v:60%"></span></li>
+        </ul>
+      </div>
+      <div data-aos="fade-down" data-aos-duration="2500">
+        <h3>Tooling &amp; Platform</h3>
+        <ul class="skills-list">
+          <li data-aos="fade-down" data-aos-duration="1500"><span>Unity &amp; Unreal Engine</span><span class="meter" style="--v:60%"></span></li>
+          <li data-aos="fade-down" data-aos-duration="1400"><span>Github</span><span class="meter" style="--v:55%"></span></li>
+          <li data-aos="fade-down" data-aos-duration="1300"><span>Blender</span><span class="meter" style="--v:90%"></span></li>
+          <li data-aos="fade-down" data-aos-duration="1200"><span>Visual Studio Code</span><span class="meter" style="--v:85%"></span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section data-aos="fade-down" data-aos-duration="1000" id="info" class="card">
+      <h3>Informasi</h3>
+      <dl class="info-list">
+        <div>
+          <dt>Lokasi</dt>
+          <dd>Indonesia - Surabya - Jl. Rangkah 1 No 97</dd>
+        </div>
+        <div>
+          <dt>Email</dt>
+          <dd>farrenaw3@gmail.com</dd>
+        </div>
+        <div>
+          <dt>Telepon</dt>
+          <dd>+62 822 6837 5990</dd>
+        </div>
+        <div>
+          <dt>Jam Kerja</dt>
+          <dd>Mon–Fri, 06:00–14:20</dd>
+        </div>
+      </dl>
+    </section>
+
+    <section data-aos="fade-down" data-aos-duration="1000" id="contact" class="card">
+      <div class="contact-split">
+        <div class="contact-form">
+          <h3>Tinggalkan Pesan</h3>
+          <p class="muted">Isi nama dan pesanmu</p>
+          <form id="msgForm">
+            <label for="name">Nama</label>
+            <input id="name" name="name" type="text" placeholder="Nama kamu" required>
+
+            <label for="message">Pesan</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tulis pesanmu di sini" required></textarea>
+
+            <div class="form-actions">
+              <button type="submit" class="btn primary">Kirim</button>
+            </div>
+          </form>
+
+          <div id="thankYou" class="thankyou" aria-hidden="true">Terima kasih telah mengirim pesan.</div>
+        </div><br>
+
+        <div class="contact-map">
+          <h3>Lokasi</h3>
+          <p class="muted">SMAK Santa Agnes Surabaya — Jl. Mendut</p>
+          <div class="map-wrap">
+            <iframe title="SMAK Santa Agnes Surabaya"
+              src="https://www.google.com/maps?q=SMAK%20Santa%20Agnes%20Surabaya%20Jl%20Mendut&output=embed"
+              loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="foot">© <span id="year"></span> — Dibuat oleh Farren Albert Widagdo</footer>
+  </main>
+  <script>
+    AOS.init();
+  </script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+  <script>
+    // Handle form submit: show alert and reset so user can send multiple messages
+    (function () {
+      const form = document.getElementById('msgForm');
+      if (!form) return;
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        const name = form.name.value.trim();
+        const message = form.message.value.trim();
+        if (!name || !message) {
+          form.querySelector('input, textarea').focus();
+          return;
+        }
+        alert('Terima kasih telah mengirim pesan.');
+        // show inline thank you message for better UX
+        const thank = document.getElementById('thankYou');
+        if (thank) {
+          thank.classList.add('show');
+          thank.setAttribute('aria-hidden', 'false');
+          setTimeout(() => {
+            thank.classList.remove('show');
+            thank.setAttribute('aria-hidden', 'true');
+          }, 3000);
+        }
+        form.reset();
+        form.name.focus();
+      });
+    })();
+
+    // Back button: prefer history.back() when possible
+    (function () {
+      const back = document.getElementById('backBtn');
+      if (!back) return;
+      back.addEventListener('click', function (e) {
+        // If user has navigation history, go back. Otherwise follow the link.
+        if (window.history && window.history.length > 1) {
+          e.preventDefault();
+          window.history.back();
+        }
+      });
+    })();
+
+    // Animate skill meters when the skills section enters viewport
+    (function () {
+      const meters = document.querySelectorAll('.skills-list .meter');
+      if (!meters.length) return;
+
+      function runAnimation() {
+        meters.forEach(m => {
+          // read target value from inline style or computed property
+          const inline = m.style.getPropertyValue('--v');
+          const computed = getComputedStyle(m).getPropertyValue('--v');
+          const target = (inline || computed).trim() || '50%';
+          // start from 0 then set to target to trigger CSS transition
+          m.style.setProperty('--v', '0%');
+          requestAnimationFrame(() => requestAnimationFrame(() => m.style.setProperty('--v', target)));
+        });
+      }
+
+      if ('IntersectionObserver' in window) {
+        const obs = new IntersectionObserver((entries, o) => {
+          entries.forEach(en => {
+            if (en.isIntersecting) {
+              runAnimation();
+              o.disconnect();
+            }
+          });
+        }, { threshold: 0.2 });
+        const target = document.getElementById('skills');
+        if (target) obs.observe(target);
+        else runAnimation();
+      } else {
+        // fallback
+        runAnimation();
+      }
+    })();
+  </script>
+</body>
+
+</html>
